@@ -1,0 +1,21 @@
+.card { 
+    max-width: 480px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.plan-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+}
