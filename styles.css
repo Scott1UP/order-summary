@@ -19,11 +19,11 @@ body {
     min-height: 100vh;
     line-height: 1.5;
     font-family: 'Red Hat Display';
-    
 }
 
 h1 {
     margin: 0;
+    font-weight: 900;
     font-size: 28px;
     color: hsl(223, 47%, 23%);
 }
@@ -41,28 +41,29 @@ strong {
 
 .card { 
     max-width: 456px;
-    min-width: 375px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    overflow: hidden;
     background-color: white;
 
     position: absolute;
     top:  50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    box-shadow: 0px 12px 24px hsla(245, 84%, 40%, 0.138);
 }
 
 .hero {
     width: 100%;
     margin-bottom: 2.5rem;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    padding: 0 3rem 2rem 3rem;
+    padding: 0 3rem 1.75rem 3rem;
     gap: 1.5rem;
 }
 
@@ -107,11 +108,13 @@ strong {
 .textLink {
     font-size: 14px;
     font-weight: 500;
+    color: hsl(245, 75%, 52%);
 }
 
 .textLink:hover {
     color: hsla(245, 75%, 52%, 0.677);;
 }
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -149,4 +152,57 @@ button {
 
 .tertiary:hover {
     color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 430px) {
+    html { 
+        background: url(images/pattern-background-mobile.svg) no-repeat center center fixed;
+        background-color: hsl(225, 100%, 94%);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body {
+        margin-inline-start: 1rem;
+        margin-inline-end: 1rem;
+    }
+    
+    .hero {
+        margin-bottom: 1.75rem;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .blurb {
+        padding: 0 12px;
+        line-height: 1.6;
+    }
+    
+    .content {
+        padding: 0 1.5rem 1rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .plan-banner {
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+    .textLink {
+        font-size: 13px;
+    }
+
+    .buttons {
+        gap: .5rem;
+    }
+
+    
 }
