@@ -5,28 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700,900" rel="stylesheet">
+
   <title>Frontend Mentor | Order summary card</title>
 </head>
   <body>
     <main>
       <section class="card">
-        <img src="./images/illustration-hero.svg" alt="A blue toned illustration of a happy woman listening to music  ">
+        <img src="./images/illustration-hero.svg" class="hero" alt="A blue toned illustration of a happy woman listening to music  ">
         <section class="content">
-          <h1>Order Summary</h1>
+          <section class="text">
+            <h1>Order Summary</h1>
 
-          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-          device anywhere you like!</p>
-          
+            <p class="blurb">You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+          </section>
           <section class="plan-banner">
-            <section class="plan-details">
-              <p><strong>Annual Plan</strong></p>
-              <p>$59.99/year</p>
+            <section class="icon-text">
+              <img src="./images/icon-music.svg" class="music" alt="Music icon">
+              <section class="plan-details">
+                <p><strong>Annual Plan</strong></p>
+                <p>$59.99/year</p>
+              </section>
             </section>
-            <a href="link.com">Change</a>
+            <a class="textLink" href="link.com">Change</a>
           </section>
           
-          <button>Proceed to Payment</button>
-          <button>Cancel order</button>
+          <section class="buttons">
+            <button class="primary">Proceed to Payment</button>
+            <button class="tertiary">Cancel order</button>
+          </section>  
       </section>
     </section>
     </main>
